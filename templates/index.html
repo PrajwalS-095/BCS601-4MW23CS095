@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Grade App</title>
+    <title>Student Grade Calculator</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
 <div class="container">
-    <h1>🎓 Student Grade App</h1>
+    <h1>🎓 Student Grade Calculator</h1>
 
     <form method="POST">
-        <input type="number" name="m1" placeholder="Subject 1 Marks" required>
-        <input type="number" name="m2" placeholder="Subject 2 Marks" required>
-        <input type="number" name="m3" placeholder="Subject 3 Marks" required>
-        <input type="number" name="m4" placeholder="Subject 4 Marks" required>
-        <input type="number" name="m5" placeholder="Subject 5 Marks" required>
+        <input type="text" name="name" placeholder="Student Name" required>
+        <input type="number" name="m1" placeholder="Subject 1" required>
+        <input type="number" name="m2" placeholder="Subject 2" required>
+        <input type="number" name="m3" placeholder="Subject 3" required>
+        <input type="number" name="m4" placeholder="Subject 4" required>
+        <input type="number" name="m5" placeholder="Subject 5" required>
 
-        <button type="submit">Calculate</button>
+        <button type="submit">Calculate & Save</button>
     </form>
 
-    {% if result %}
-    <div class="result">
-        {% if result.error %}
-            <p style="color:red;">{{ result.error }}</p>
-        {% else %}
-            <p><b>Total:</b> {{ result.total }}</p>
-            <p><b>Percentage:</b> {{ result.percentage }}%</p>
-            <p><b>Grade:</b> {{ result.grade }}</p>
-        {% endif %}
-    </div>
-    {% endif %}
+    <h3>📋 Saved Results</h3>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Total</th>
+            <th>Percentage</th>
+            <th>Grade</th>
+            <th>Action</th>
+        </tr>
+
+        {% for row in data %}
+        <tr>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[7] }}</td>
+            <td>{{ row[8] }}</td>
+            <td>{{ row[9] }}</td>
+            <td><a href="/delete/{{ row[0] }}">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
 </div>
 
 </body>
