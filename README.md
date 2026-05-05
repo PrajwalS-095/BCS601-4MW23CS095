@@ -26,8 +26,7 @@ Render Cloud Platform
 
 ### **Deployment URL**
 
-https://your-app.onrender.com
-
+https://bcs601-4mw23cs095.onrender.com
 ---
 
 ### **How It Works**
