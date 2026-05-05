@@ -1,147 +1,75 @@
-# 🎓 BCS601-4MW23CS095-StudentGrade
-
-## 📌 Project Description
-
-This project is a **Cloud-Based Student Grade Application** developed as part of the BCS601 Cloud Computing Lab.
-
-The application allows users to **enter marks of 5 subjects** and automatically calculates:
-
-* Total marks
-* Percentage
-* Grade
-
-The system is deployed on a cloud platform, making it accessible from anywhere via the internet.
+CS601-4MW23CS095 – Student Grade App
 
 ---
 
-## 🚀 Live Application
+### **Project Title**
 
-👉 https://your-app.onrender.com/
-
-This project is hosted on Render, which provides cloud deployment and hosting services for web applications.
+Cloud Student Grade App
 
 ---
 
-## 🛠️ Technologies Used
+### **Description**
 
-* **Frontend:** HTML, CSS
-* **Backend:** Python (Flask)
-* **Deployment:** Render Cloud Platform
+This project is developed as part of Cloud Computing Lab (BCS601). It is a simple web-based application that allows students to enter marks of 5 subjects and automatically calculates the total marks, percentage, and grade. The application performs calculations dynamically and displays the result instantly on the webpage.
 
 ---
 
-## ⚙️ Features
+### **Technologies Used**
 
-* ➕ Enter marks for 5 subjects
-* 📊 Calculate total marks
-* 📈 Calculate percentage
-* 🎯 Display grade based on performance
-* ☁️ Cloud-based access
+Python
+Flask Framework
+HTML & CSS
+GitHub
+Render Cloud Platform
 
 ---
 
-## 📂 Project Structure
+### **Deployment URL**
 
-```
-BCS601-4MW23CS095-StudentGrade/
+https://your-app.onrender.com
+
+---
+
+### **How It Works**
+
+When a user enters marks for 5 subjects and submits the form:
+The application processes the input using Flask backend.
+Total marks are calculated by summing all subjects.
+Percentage is computed based on total marks.
+Grade is assigned based on the percentage.
+The result is displayed on the webpage instantly.
+
+---
+
+### **Project Structure**
+
+bcs601_4mw23cs095/
 │
 ├── app.py
+├── requirements.txt
 ├── templates/
 │   └── index.html
 ├── static/
 │   └── style.css
-├── requirements.txt
 └── README.md
-```
 
 ---
 
-## ▶️ How to Run Locally
+### **Steps to Run Locally**
 
-1. Clone the repository:
+Clone the repository:
+git clone https://github.com/PrajwalS-095/BCS601-4MW23CS095
 
-```
-git clone https://github.com/PrajwalS-095/BCS601-4MW23CS095.git
-```
+Navigate to project folder:
+cd BCS601-4MW23CS095-StudentUtility
 
-2. Navigate to the project folder:
-
-```
-cd BCS601-4MW23CS095-StudentGrade
-```
-
-3. Create virtual environment:
-
-```
-python -m venv venv
-```
-
-4. Activate environment:
-
-```
-venv\Scripts\activate
-```
-
-5. Install dependencies:
-
-```
+Install dependencies:
 pip install -r requirements.txt
-```
 
-6. Run the application:
-
-```
+Run the application:
 python app.py
-```
 
-7. Open in browser:
-
-```
+Open browser:
 http://127.0.0.1:5000
-```
-
----
-
-## ☁️ Deployment Steps
-
-1. Created project using Flask
-2. Designed frontend using HTML and CSS
-3. Implemented logic for marks, percentage, and grade
-4. Uploaded code to GitHub
-5. Connected repository to Render
-6. Configured build and start commands
-7. Deployed successfully
-
----
-
-## 📘 Learning Outcomes
-
-* Understanding of cloud deployment
-* Basics of backend development using Flask
-* Form handling in web applications
-* Deployment using cloud platforms
-* Version control using GitHub
-
----
-
-## 📎 Annexure
-
-* GitHub Repository: https://github.com/PrajwalS-095/BCS601-4MW23CS095
-* Deployment URL: https://your-app.onrender.com/
-
----
-
-## 📚 References
-
-* Flask Documentation
-* Render Documentation
-
----
-
-## 👨‍💻 Author
-
-* Name: Prajwal S
-* USN: 4MW23CS095
-* Course: BCS601 Cloud Computing Lab
 
 ---
