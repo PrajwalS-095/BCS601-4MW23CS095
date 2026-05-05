@@ -14,26 +14,30 @@ def index():
             m4 = int(request.form['m4'])
             m5 = int(request.form['m5'])
 
-            total = m1 + m2 + m3 + m4 + m5
-            percentage = total / 5
-
-            # Grade Logic
-            if percentage >= 90:
-                grade = "A+"
-            elif percentage >= 75:
-                grade = "A"
-            elif percentage >= 60:
-                grade = "B"
-            elif percentage >= 50:
-                grade = "C"
+            # Validate that all marks are <= 100
+            if m1 > 100 or m2 > 100 or m3 > 100 or m4 > 100 or m5 > 100:
+                result = {"error": "Input numbers should be less than or equal to 100"}
             else:
-                grade = "Fail"
+                total = m1 + m2 + m3 + m4 + m5
+                percentage = total / 5
 
-            result = {
-                "total": total,
-                "percentage": round(percentage, 2),
-                "grade": grade
-            }
+                # Grade Logic
+                if percentage >= 90:
+                    grade = "A+"
+                elif percentage >= 75:
+                    grade = "A"
+                elif percentage >= 60:
+                    grade = "B"
+                elif percentage >= 50:
+                    grade = "C"
+                else:
+                    grade = "Fail"
+
+                result = {
+                    "total": total,
+                    "percentage": round(percentage, 2),
+                    "grade": grade
+                }
 
         except:
             result = {"error": "Invalid input"}
