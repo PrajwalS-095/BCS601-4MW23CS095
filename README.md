@@ -1,17 +1,22 @@
-# 📝 BCS601-4MW23CS095-CloudNotes
+# 🎓 BCS601-4MW23CS095-StudentUtility
 
 ## 📌 Project Description
 
-This project is a **Cloud-Based Notes Application** developed as part of the BCS601 Cloud Computing lab.
-It allows users to **add, view, and delete notes** through a simple web interface.
+This project is a **Cloud-Based Student Utility Application** developed as part of the BCS601 Cloud Computing Lab.
 
-The application is deployed on a cloud platform, making it accessible from anywhere via the internet.
+The application allows users to **enter marks of 5 subjects** and automatically calculates:
+
+* Total marks
+* Percentage
+* Grade
+
+The system is deployed on a cloud platform, making it accessible from anywhere via the internet.
 
 ---
 
 ## 🚀 Live Application
 
-👉 https://bcs601-4mw23cs095.onrender.com/
+👉 https://your-app.onrender.com/
 
 This project is hosted on Render, which provides cloud deployment and hosting services for web applications.
 
@@ -21,16 +26,16 @@ This project is hosted on Render, which provides cloud deployment and hosting se
 
 * **Frontend:** HTML, CSS
 * **Backend:** Python (Flask)
-* **Database:** SQLite
 * **Deployment:** Render Cloud Platform
 
 ---
 
 ## ⚙️ Features
 
-* ➕ Add new notes
-* 📋 View all saved notes
-* ❌ Delete notes
+* ➕ Enter marks for 5 subjects
+* 📊 Calculate total marks
+* 📈 Calculate percentage
+* 🎯 Display grade based on performance
 * ☁️ Cloud-based access
 
 ---
@@ -38,7 +43,7 @@ This project is hosted on Render, which provides cloud deployment and hosting se
 ## 📂 Project Structure
 
 ```
-BCS601-4MW23CS095-CloudNotes/
+BCS601-4MW23CS095-StudentUtility/
 │
 ├── app.py
 ├── templates/
@@ -62,7 +67,7 @@ git clone https://github.com/PrajwalS-095/BCS601-4MW23CS095.git
 2. Navigate to the project folder:
 
 ```
-cd BCS601-4MW23CS095-CloudNotes
+cd BCS601-4MW23CS095-StudentUtility
 ```
 
 3. Create virtual environment:
@@ -100,10 +105,12 @@ http://127.0.0.1:5000
 ## ☁️ Deployment Steps
 
 1. Created project using Flask
-2. Uploaded code to GitHub
-3. Connected repository to Render
-4. Configured build and start commands
-5. Deployed successfully
+2. Designed frontend using HTML and CSS
+3. Implemented logic for marks, percentage, and grade
+4. Uploaded code to GitHub
+5. Connected repository to Render
+6. Configured build and start commands
+7. Deployed successfully
 
 ---
 
@@ -111,7 +118,8 @@ http://127.0.0.1:5000
 
 * Understanding of cloud deployment
 * Basics of backend development using Flask
-* Database integration using SQLite
+* Form handling in web applications
+* Deployment using cloud platforms
 * Version control using GitHub
 
 ---
@@ -119,7 +127,7 @@ http://127.0.0.1:5000
 ## 📎 Annexure
 
 * GitHub Repository: https://github.com/PrajwalS-095/BCS601-4MW23CS095
-* Deployment URL: https://bcs601-4mw23cs095.onrender.com/
+* Deployment URL: https://your-app.onrender.com/
 
 ---
 
@@ -127,6 +135,13 @@ http://127.0.0.1:5000
 
 * Flask Documentation
 * Render Documentation
-* SQLite Documentation
+
+---
+
+## 👨‍💻 Author
+
+* Name: Prajwal S
+* USN: 4MW23CS095
+* Course: BCS601 Cloud Computing Lab
 
 ---
