@@ -1,8 +1,8 @@
-# 🎓 BCS601-4MW23CS095-StudentUtility
+# 🎓 BCS601-4MW23CS095-StudentGrade
 
 ## 📌 Project Description
 
-This project is a **Cloud-Based Student Utility Application** developed as part of the BCS601 Cloud Computing Lab.
+This project is a **Cloud-Based Student Grade Application** developed as part of the BCS601 Cloud Computing Lab.
 
 The application allows users to **enter marks of 5 subjects** and automatically calculates:
 
@@ -43,7 +43,7 @@ This project is hosted on Render, which provides cloud deployment and hosting se
 ## 📂 Project Structure
 
 ```
-BCS601-4MW23CS095-StudentUtility/
+BCS601-4MW23CS095-StudentGrade/
 │
 ├── app.py
 ├── templates/
@@ -67,7 +67,7 @@ git clone https://github.com/PrajwalS-095/BCS601-4MW23CS095.git
 2. Navigate to the project folder:
 
 ```
-cd BCS601-4MW23CS095-StudentUtility
+cd BCS601-4MW23CS095-StudentGrade
 ```
 
 3. Create virtual environment:
