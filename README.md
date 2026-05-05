@@ -1,4 +1,4 @@
-# 📝 BCS601-USNXXX-CloudNotes
+# 📝 BCS601-4MW23CS095-CloudNotes
 
 ## 📌 Project Description
 
@@ -38,7 +38,7 @@ This project is hosted on Render, which provides cloud deployment and hosting se
 ## 📂 Project Structure
 
 ```
-BCS601-USNXXX-CloudNotes/
+BCS601-4MW23CS095-CloudNotes/
 │
 ├── app.py
 ├── templates/
@@ -56,13 +56,13 @@ BCS601-USNXXX-CloudNotes/
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/bcs601_4mwcsxxx.git
+git clone https://github.com/PrajwalS-095/BCS601-4MW23CS095.git
 ```
 
 2. Navigate to the project folder:
 
 ```
-cd BCS601-USNXXX-CloudNotes
+cd BCS601-4MW23CS095-CloudNotes
 ```
 
 3. Create virtual environment:
